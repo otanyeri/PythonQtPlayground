@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>687</width>
+    <height>441</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Corona Curve Plotter</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Country</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGraphicsView" name="ploter"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>https://www.worldometers.info/coronavirus/?#countries</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox">
+      <property name="maxVisibleItems">
+       <number>10</number>
+      </property>
+      <property name="maxCount">
+       <number>100</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>Belgium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Turkey</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="fetch">
+      <property name="text">
+       <string>Fetch Graph</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
